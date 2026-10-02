@@ -1,13 +1,9 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>temp application</title>
-    <link rel="stylesheet" href="{% static 'testapp_home/home_styles.css' %}">
-</head>
-<body>
-    <h1>This is a custom application!</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}
+testapp
+{% endblock %}
+
+{% block content %}
+<h1>TESTapp | theventhugs as always</h1>
+{% endblock %}

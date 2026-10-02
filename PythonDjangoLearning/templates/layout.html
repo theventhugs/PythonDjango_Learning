@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Default value
+        {% endblock %}
+    </title>
+    <link rel='stylesheet' href='{%static 'styles.css'%}'
+</head>
+<body>
+    {% comment %} <nav>This is a navbar</nav> {% endcomment %}
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">theventhugs</div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/services/">Services</a>
+            <a href="/contact/">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+    {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 theventhugs Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
