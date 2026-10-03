@@ -1,9 +1,18 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} 
+ 
+{% block title %} 
+Home Page 
+{% endblock %} 
+ 
+{% block content %} 
 
-{% block title %}
-Home Page
-{% endblock %}
+<div class="pt-10">
+    <div> 
+        <h1 class="mt-7">This is just a random HTML page</h1> 
+    </div> 
 
-{% block content %}
-<h1>This is just a random HTML page</h1>
+    <h2 class="mt-4 text-amber-200">
+        This is another big text that I am writing in order to check the functionality of Tailwind
+    </h2> 
+</div>
 {% endblock %}

@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +10,8 @@
         Default value
         {% endblock %}
     </title>
-    <link rel='stylesheet' href='{%static 'styles.css'%}'
+    <link rel='stylesheet' href='{%static 'styles.css'%}'>
+    {% tailwind_css %}
 </head>
 <body>
     {% comment %} <nav>This is a navbar</nav> {% endcomment %}
